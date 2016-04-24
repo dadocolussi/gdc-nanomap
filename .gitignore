@@ -1,0 +1,14 @@
+*~
+.DS_Store
+*.o
+*.d
+*.so
+*.dylib
+*.a
+*_xsd.h
+*.swp
+/debug/
+/release/
+/objects/
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
