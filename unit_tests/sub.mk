@@ -1,4 +1,11 @@
-TARGET := unit_tests
+TARGET := tests/unit_tests
+TGT_INCDIRS := ../include
 SOURCES := unit_tests.cpp
-TGT_POSTMAKE := $(TARGET_DIR)/$(TARGET)
 
+define COPY_HEADERS_AND_RUN_TESTS
+	$(TARGET_DIR)/$(TARGET)
+	mkdir -p $(TARGET_DIR)/include/gdc
+	cp $(DIR)/../include/gdc/*.hpp $(TARGET_DIR)/include/gdc/
+endef
+
+TGT_POSTMAKE := $(COPY_HEADERS_AND_RUN_TESTS)

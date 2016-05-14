@@ -25,7 +25,7 @@
 #define CATCH_CONFIG_MAIN
 
 
-#include <gdc_nanomap.hpp>
+#include <gdc/nanomap.hpp>
 
 #include "catch.hpp"
 

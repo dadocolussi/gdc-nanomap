@@ -27,7 +27,8 @@
 #include <vector>
 #include <chrono>
 #include <unordered_map>
-#include <gdc_nanomap.hpp>
+
+#include <gdc/nanomap.hpp>
 
 
 typedef std::unordered_map<int, int> um;

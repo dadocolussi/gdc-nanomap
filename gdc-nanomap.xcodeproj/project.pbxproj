@@ -67,7 +67,6 @@
 /* Begin PBXFileReference section */
 		6E2925FB1CDEED4C0095370C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6E3B735B1CC9939400FC85B8 /* demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E3B73661CC9946300FC85B8 /* gdc_nanomap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gdc_nanomap.hpp; sourceTree = "<group>"; };
 		6E3B73681CC9949C00FC85B8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6E3B73691CC9949C00FC85B8 /* main.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.mk; sourceTree = "<group>"; };
 		6E3B736A1CC9949C00FC85B8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		6E3B73791CCAED5B00FC85B8 /* unit_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unit_tests; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3B73811CCAEDAE00FC85B8 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 		6E3B73821CCB248700FC85B8 /* sub.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sub.mk; sourceTree = "<group>"; };
+		6EE4687A1CE7A2AF004AEC7D /* nanomap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nanomap.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 				6E3B736B1CC9949C00FC85B8 /* Makefile.boilermake */,
 				6E3B736A1CC9949C00FC85B8 /* Makefile */,
 				6E3B73691CC9949C00FC85B8 /* main.mk */,
-				6E3B735D1CC9939400FC85B8 /* src */,
+				6EE468781CE7A2AF004AEC7D /* include */,
 				6E3B736D1CC994E100FC85B8 /* unit_tests */,
 				6E3B736E1CC994F700FC85B8 /* demo */,
 				6E3B735C1CC9939400FC85B8 /* Products */,
@@ -121,14 +121,6 @@
 				6E3B73791CCAED5B00FC85B8 /* unit_tests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6E3B735D1CC9939400FC85B8 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				6E3B73661CC9946300FC85B8 /* gdc_nanomap.hpp */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		6E3B736D1CC994E100FC85B8 /* unit_tests */ = {
@@ -148,6 +140,22 @@
 				6E3B73711CC9A93B00FC85B8 /* demo.cpp */,
 			);
 			path = demo;
+			sourceTree = "<group>";
+		};
+		6EE468781CE7A2AF004AEC7D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6EE468791CE7A2AF004AEC7D /* gdc */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6EE468791CE7A2AF004AEC7D /* gdc */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4687A1CE7A2AF004AEC7D /* nanomap.hpp */,
+			);
+			path = gdc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/src";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/src";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -376,7 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/src";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -385,7 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/src";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -400,6 +408,7 @@
 				6E2926001CDFD8F50095370C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E3B73561CC9939400FC85B8 /* Build configuration list for PBXProject "gdc-nanomap" */ = {
 			isa = XCConfigurationList;

@@ -11,7 +11,7 @@ Mac OS X using clang 7.3.0.
 
 ```c++
 // nanomap implementation is in a single header file.
-#include <gdc_nanomap.hpp>
+#include <gdc/nanomap.hpp>
 
 // We use nanomap_factory to create a nanomap with capacity for
 // 32 key/value pairs. The map and the key and value arrays are

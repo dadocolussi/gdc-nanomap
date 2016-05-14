@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3B73781CCAED5B00FC85B8"
-            BuildableName = "unit_tests"
-            BlueprintName = "unit_tests"
-            ReferencedContainer = "container:gdc-nanomap.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3B73781CCAED5B00FC85B8"
-            BuildableName = "unit_tests"
-            BlueprintName = "unit_tests"
+            BlueprintIdentifier = "6E2925FD1CDFD8F40095370C"
+            BuildableName = "All"
+            BlueprintName = "All"
             ReferencedContainer = "container:gdc-nanomap.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -7,8 +7,7 @@
 *.a
 *_xsd.h
 *.swp
-/debug/
-/release/
+/products/
 /objects/
 *.xcodeproj/project.xcworkspace
 *.xcodeproj/xcuserdata
