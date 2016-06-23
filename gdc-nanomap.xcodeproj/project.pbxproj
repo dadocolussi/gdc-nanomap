@@ -68,15 +68,10 @@
 		6E2925FB1CDEED4C0095370C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6E3B735B1CC9939400FC85B8 /* demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3B73681CC9949C00FC85B8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6E3B73691CC9949C00FC85B8 /* main.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.mk; sourceTree = "<group>"; };
-		6E3B736A1CC9949C00FC85B8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		6E3B736B1CC9949C00FC85B8 /* Makefile.boilermake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.boilermake; sourceTree = "<group>"; };
-		6E3B73701CC9951500FC85B8 /* sub.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sub.mk; sourceTree = "<group>"; };
 		6E3B73711CC9A93B00FC85B8 /* demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = demo.cpp; sourceTree = "<group>"; };
 		6E3B73731CCAED4700FC85B8 /* unit_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unit_tests.cpp; sourceTree = "<group>"; };
 		6E3B73791CCAED5B00FC85B8 /* unit_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unit_tests; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3B73811CCAEDAE00FC85B8 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
-		6E3B73821CCB248700FC85B8 /* sub.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sub.mk; sourceTree = "<group>"; };
 		6EE4687A1CE7A2AF004AEC7D /* nanomap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nanomap.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,9 +98,6 @@
 			children = (
 				6E2925FB1CDEED4C0095370C /* README.md */,
 				6E3B73681CC9949C00FC85B8 /* LICENSE */,
-				6E3B736B1CC9949C00FC85B8 /* Makefile.boilermake */,
-				6E3B736A1CC9949C00FC85B8 /* Makefile */,
-				6E3B73691CC9949C00FC85B8 /* main.mk */,
 				6EE468781CE7A2AF004AEC7D /* include */,
 				6E3B736D1CC994E100FC85B8 /* unit_tests */,
 				6E3B736E1CC994F700FC85B8 /* demo */,
@@ -126,7 +118,6 @@
 		6E3B736D1CC994E100FC85B8 /* unit_tests */ = {
 			isa = PBXGroup;
 			children = (
-				6E3B73701CC9951500FC85B8 /* sub.mk */,
 				6E3B73811CCAEDAE00FC85B8 /* catch.hpp */,
 				6E3B73731CCAED4700FC85B8 /* unit_tests.cpp */,
 			);
@@ -136,7 +127,6 @@
 		6E3B736E1CC994F700FC85B8 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				6E3B73821CCB248700FC85B8 /* sub.mk */,
 				6E3B73711CC9A93B00FC85B8 /* demo.cpp */,
 			);
 			path = demo;
