@@ -1,4 +1,4 @@
-TARGET := tests/unit_tests
+TARGET := tests/gdc-nanomap_unit_tests
 TGT_INCDIRS := ../include
 SOURCES := unit_tests.cpp
 
